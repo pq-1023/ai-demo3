@@ -4,8 +4,7 @@ import requests
 import redis
 import pymysql
 from typing import Optional, Tuple, List, Dict, Generator
-
-
+#
 # ---------------------- 1. OllamaClient 同时支持普通/流式调用 ----------------------
 class OllamaClient:
     def __init__(self, model_name: str):
@@ -226,7 +225,6 @@ if __name__ == "__main__":
         print()
 
     mysql_db.close()
-
     """
     # 重启加载历史会话【正确模板】
     session = PersistentChatSession(
